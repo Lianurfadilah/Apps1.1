@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:scrollbarStyle="insideInset"
+    tools:context="com.lianurfadilah46.apps.NewAccount">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+    <TableLayout
+
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:paddingTop="2dp"
+            android:text="Buat Akun Baru "
+            android:textAlignment="center"
+            android:layout_marginBottom="30dp"
+            android:textColor="#000000"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:singleLine="true"/>
+
+        <TableRow
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:width="10dp"
+                android:text="Nama "
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/txtNama"
+                android:layout_marginLeft="10dp"
+                android:width="220dp"
+                android:singleLine="true"
+                android:maxLength="10"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:width="100dp"
+                android:text="Jenis Kelamin "
+                android:textColor="#000000"
+                android:textSize="15dp" />
+            <RadioGroup
+                android:id="@+id/jk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+                <RadioButton
+                    android:id="@+id/btnLk"
+                    android:text="Laki-laki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <RadioButton
+                    android:id="@+id/btnPr"
+                    android:text="Perempuan"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+            </RadioGroup>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:width="100dp"
+                android:text="Username "
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/txtUser"
+                android:layout_marginLeft="10dp"
+                android:width="220dp"
+                android:singleLine="true"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:width="100dp"
+                android:text="Password"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:inputType="textPassword"
+                android:layout_marginLeft="10dp"
+                android:width="220dp"
+                android:singleLine="true"
+                android:maxLength="8"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:width="100dp"
+                android:text="Re-Password "
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/txtRepass"
+                android:inputType="textPassword"
+
+                android:layout_marginLeft="10dp"
+                android:width="220dp"
+                android:singleLine="true"
+                android:maxLength="8"/>
+        </TableRow>
+
+
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TableRow
+            android:paddingTop="59dp">
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="156dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:text="Simpan"
+        android:layout_marginLeft="5dp"/>
+
+    <Button
+        android:id="@+id/btnBatal"
+        android:layout_width="158dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:text="batal"
+        android:layout_marginRight="5dp"/>
+        </TableRow>
+    </TableLayout>
+    </LinearLayout>
+    </ScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="article_keylines" />
+    <dimen name="md_keylines" />
+    <dimen name="article_subheading" />
+    <dimen name="list_body" />
+    <dimen name="cards_button_height" />
+    <dimen name="cards_button_width" />
+    <dimen name="card_image_height" />
+    <dimen name="card_title_height" />
+    <dimen name="avator_size" />
+    <dimen name="tile_padding" />
+    <dimen name="tile_height" />
+    <dimen name="article_titles" />
+    <dimen name="navheader_height" />
+</resources>
